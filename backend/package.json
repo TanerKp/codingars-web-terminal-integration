@@ -1,0 +1,42 @@
+{
+  "name": "coding-ars-backend",
+  "version": "1.0.0",
+  "description": "Data endpoint for programming tasks related to the Coding ARS",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "debug": "DEBUG=coding:* node --inspect app.js",
+    "test": "DEBUG=coding:* ./node_modules/mocha/bin/mocha --exit",
+    "test:code-review": "DEBUG=coding:* ./node_modules/mocha/bin/mocha test/testCodeReview.js --exit",
+    "test:extract-score": "DEBUG=coding:* ./node_modules/mocha/bin/mocha test/testExtractScore.js --exit",
+    "update": "npm install --force coderunner"
+  },
+  "author": "Sebastian Apel",
+  "license": "ISC",
+  "dependencies": {
+    "archiver": "^5.3.0",
+    "axios": "^0.21.1",
+    "body-parser": "^1.19.0",
+    "connect-mongo": "^3.2.0",
+    "debug": "^4.3.1",
+    "dotenv": "^16.4.7",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "isomorphic-git": "^1.8.0",
+    "js-yaml": "^4.0.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.11.15",
+    "morgan": "^1.10.0",
+    "node-cache": "^5.1.2",
+    "uuid": "^8.3.2",
+    "ws": "^8.18.2"
+  },
+  "devDependencies": {
+    "chai": "^4.3.0",
+    "chai-as-promised": "^7.1.1",
+    "chai-http": "^4.3.0",
+    "mocha": "^8.2.1",
+    "sinon": "^19.0.2",
+    "thi-code-runner": "git+https://github.com/thi-coding-ars/code-runner.git#main"
+  }
+}

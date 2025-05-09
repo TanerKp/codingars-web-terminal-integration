@@ -1,0 +1,12 @@
+{
+    "runners": {
+        "java": "http://localhost:3000/run-java",
+        "python": "http://localhost:3001/run-python"
+    },
+    "testers": {
+        "java-junit4": "http://localhost:3000/run-java-junit4"
+    },
+    "callbacks": {
+        "internal": "http://localhost:4001"
+    }
+}

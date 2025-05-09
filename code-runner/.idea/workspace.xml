@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="92bafd55-f7e1-4d2c-ac68-e22b7983305a" name="Changes" comment="add missing functionality like timeouts and request validation">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/container/container_start.go" beforeDir="false" afterPath="$PROJECT_DIR$/services/container/container_start.go" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Go File" />
+      </list>
+    </option>
+  </component>
+  <component name="GOROOT" url="file://$USER_HOME$/go/go1.20.3" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MacroExpansionManager">
+    <option name="directoryName" value="jda2ii9f" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2Rk4JHSjHjEPD7hfg2caVV6svDL" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultGoTemplateProperty&quot;: &quot;Go File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/martin/Documents/master/code-runner&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/resources" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/services/codeRunner/input" />
+      <recent name="$PROJECT_DIR$/services/codeRunner/check" />
+      <recent name="$PROJECT_DIR$/services/codeRunner/run" />
+      <recent name="$PROJECT_DIR$/services" />
+      <recent name="$PROJECT_DIR$/network/netwriter" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Go Build.go build code-runner">
+    <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
+      <module name="code-runner" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build code-runner" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="code-runner" />
+      <working_directory value="$PROJECT_DIR$" />
+      <envs>
+        <env name="CODE_RUNNER_CONFIG" value="./config.json" />
+      </envs>
+      <kind value="PACKAGE" />
+      <package value="code-runner" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/main.go" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestJunitExtractor in code-runner/services/codeRunner/check/extractor" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="code-runner" />
+      <working_directory value="$PROJECT_DIR$/services/codeRunner/check/extractor" />
+      <root_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="code-runner/services/codeRunner/check/extractor" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <pattern value="^\QTestJunitExtractor\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestJunitExtractorIncorrectReport in code-runner/services/codeRunner/check/extractor" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="code-runner" />
+      <working_directory value="$PROJECT_DIR$/services/codeRunner/check/extractor" />
+      <root_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="code-runner/services/codeRunner/check/extractor" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <pattern value="^\QTestJunitExtractorIncorrectReport\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestTemplate in code-runner/services/codeRunner" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="code-runner" />
+      <working_directory value="$PROJECT_DIR$/services/codeRunner" />
+      <root_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="code-runner/services/codeRunner" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <pattern value="^\QTestTemplate\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="GoTestRunConfiguration" factoryName="Go Test">
+      <module name="code-runner" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="DIRECTORY" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="dockerfile" temporary="true">
+      <deployment type="dockerfile">
+        <settings />
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="junit.Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="imageTag" value="sylent/junit5-runner" />
+          <option name="containerName" value="" />
+          <option name="sourceFilePath" value="junit.Dockerfile" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Docker.junit.Dockerfile" />
+      <item itemvalue="Go Build.go build code-runner" />
+      <item itemvalue="Go Test.TestTemplate in code-runner/services/codeRunner" />
+      <item itemvalue="Go Test.TestJunitExtractor in code-runner/services/codeRunner/check/extractor" />
+      <item itemvalue="Go Test.TestJunitExtractorIncorrectReport in code-runner/services/codeRunner/check/extractor" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Go Build.go build code-runner" />
+        <item itemvalue="Docker.junit.Dockerfile" />
+        <item itemvalue="Go Test.TestTemplate in code-runner/services/codeRunner" />
+        <item itemvalue="Go Test.TestJunitExtractor in code-runner/services/codeRunner/check/extractor" />
+        <item itemvalue="Go Test.TestJunitExtractorIncorrectReport in code-runner/services/codeRunner/check/extractor" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="92bafd55-f7e1-4d2c-ac68-e22b7983305a" name="Changes" comment="" />
+      <created>1687780674041</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1687780674041</updated>
+      <workItem from="1687780675616" duration="67475000" />
+      <workItem from="1689001860039" duration="24417000" />
+      <workItem from="1689105041932" duration="2337000" />
+      <workItem from="1689776088390" duration="39244000" />
+      <workItem from="1690981713845" duration="1523000" />
+      <workItem from="1691835977285" duration="1644000" />
+      <workItem from="1692482663208" duration="514000" />
+      <workItem from="1693827117506" duration="13049000" />
+      <workItem from="1693853450755" duration="2123000" />
+      <workItem from="1695556657924" duration="23000" />
+      <workItem from="1695725740076" duration="9289000" />
+    </task>
+    <task id="LOCAL-00001" summary="enable stdin passing from websocket connection">
+      <created>1688410773989</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1688410773989</updated>
+    </task>
+    <task id="LOCAL-00002" summary="refactor and add outputtest capability">
+      <created>1688579689535</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1688579689535</updated>
+    </task>
+    <task id="LOCAL-00003" summary="rm log">
+      <created>1688579717123</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1688579717123</updated>
+    </task>
+    <task id="LOCAL-00004" summary="refactor writer and begin adding file test">
+      <created>1688678903044</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1688678903044</updated>
+    </task>
+    <task id="LOCAL-00005" summary="add unit test capabilities">
+      <created>1688748626984</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1688748626984</updated>
+    </task>
+    <task id="LOCAL-00006" summary="add job scheduler and cleanup jobs">
+      <created>1689016034066</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1689016034066</updated>
+    </task>
+    <task id="LOCAL-00007" summary="code_runner_execute.go error handling and start error handling for code_runner_check.go">
+      <created>1689022956085</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1689022956085</updated>
+    </task>
+    <task id="LOCAL-00008" summary="add some unit tests">
+      <created>1689095498633</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1689095498633</updated>
+    </task>
+    <task id="LOCAL-00009" summary="add extractor and refactor to smaller packages">
+      <created>1689172831592</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1689172831592</updated>
+    </task>
+    <task id="LOCAL-00010" summary="implement extractors in file tests. More validation needed">
+      <created>1689694485748</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1689694485748</updated>
+    </task>
+    <task id="LOCAL-00011" summary="add schedule durations to config file">
+      <created>1689695210576</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1689695210576</updated>
+    </task>
+    <task id="LOCAL-00012" summary="add templating to executionCmd">
+      <created>1689777986444</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1689777986444</updated>
+    </task>
+    <task id="LOCAL-00013" summary="add MainFile to CheckParams to allow templating for output tests">
+      <created>1689780439524</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1689780439524</updated>
+    </task>
+    <task id="LOCAL-00014" summary="add memory and cpu limits as well as read only flag">
+      <created>1690234081530</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1690234081533</updated>
+    </task>
+    <task id="LOCAL-00015" summary="formatting and json naming">
+      <created>1690311691517</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1690311691517</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Dockerfile and Makefile">
+      <created>1690982186154</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1690982186154</updated>
+    </task>
+    <task id="LOCAL-00017" summary="rm add config functionality&#10;change extractor regex pattern">
+      <created>1694123333820</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1694123333820</updated>
+    </task>
+    <task id="LOCAL-00018" summary="add missing functionality like timeouts and request validation">
+      <created>1695733918789</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1695733918789</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <MESSAGE value="enable stdin passing from websocket connection" />
+    <MESSAGE value="refactor and add outputtest capability" />
+    <MESSAGE value="rm log" />
+    <MESSAGE value="refactor writer and begin adding file test" />
+    <MESSAGE value="add unit test capabilities" />
+    <MESSAGE value="add job scheduler and cleanup jobs" />
+    <MESSAGE value="code_runner_execute.go error handling and start error handling for code_runner_check.go" />
+    <MESSAGE value="add some unit tests" />
+    <MESSAGE value="add extractor and refactor to smaller packages" />
+    <MESSAGE value="implement extractors in file tests. More validation needed" />
+    <MESSAGE value="add schedule durations to config file" />
+    <MESSAGE value="add templating to executionCmd" />
+    <MESSAGE value="add MainFile to CheckParams to allow templating for output tests" />
+    <MESSAGE value="add memory and cpu limits as well as read only flag" />
+    <MESSAGE value="formatting and json naming" />
+    <MESSAGE value="Dockerfile and Makefile" />
+    <MESSAGE value="rm add config functionality&#10;change extractor regex pattern" />
+    <MESSAGE value="add missing functionality like timeouts and request validation" />
+    <option name="LAST_COMMIT_MESSAGE" value="add missing functionality like timeouts and request validation" />
+  </component>
+  <component name="VgoProject">
+    <settings-migrated>true</settings-migrated>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/services/codeRunner/check/extractor/extractor_junit_test.go</url>
+          <line>17</line>
+          <option name="timeStamp" value="65" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/services/codeRunner/check/extractor/extractor_junit_test.go</url>
+          <line>20</line>
+          <option name="timeStamp" value="66" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/services/container/container_start.go</url>
+          <line>42</line>
+          <option name="timeStamp" value="73" />
+        </line-breakpoint>
+      </breakpoints>
+      <default-breakpoints>
+        <breakpoint type="DlvErrorBreakpoint" />
+      </default-breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/code_runner$TestCRSavesContainerInSession_in_code_runner_services_codeRunner.out" NAME="TestCRSavesContainerInSession in code-runner/services/codeRunner Coverage Results" MODIFIED="1689082052506" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="GoCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/code_runner$go_test_code_runner_services_codeRunner.out" NAME="go test code-runner/services/codeRunner Coverage Results" MODIFIED="1689084376793" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="GoCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/code_runner$go_test_code_runner.out" NAME="go test code-runner Coverage Results" MODIFIED="1689084984779" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="GoCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/code_runner$TestJunitExtractor_in_code_runner_services_codeRunner_check_extractor.out" NAME="TestJunitExtractor in code-runner/services/codeRunner/check/extractor Coverage Results" MODIFIED="1689171047947" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="GoCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/code_runner$TestJunitExtractorIncorrectReport_in_code_runner_services_codeRunner_check_extractor.out" NAME="TestJunitExtractorIncorrectReport in code-runner/services/codeRunner/check/extractor Coverage Results" MODIFIED="1689171351207" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="GoCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+</project>

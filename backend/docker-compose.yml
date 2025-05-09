@@ -1,0 +1,53 @@
+#version: "3.7"
+
+services:
+  mongodb: 
+    image: mongo:3.6.5-jessie
+    platform: linux/x86_64
+    ports:
+      - 27017:27017
+    volumes:
+      - 'data:/data/db'
+
+  app:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 4000:4000
+    environment:
+      - LLM_API_KEY=${LLM_API_KEY}
+      - LLM_TYPE=${LLM_TYPE}
+      - LLM_MODEL=${LLM_MODEL}
+      - DATABASE=mongodb://mongodb:27017
+      - DEBUG=coding:*
+      - CHAT_FILE=/var/lib/app/chat.yaml
+    volumes:
+      - './config.docker.json:/var/lib/app/config.json:ro'
+      - './chat.yaml:/var/lib/app/chat.yaml:ro'
+      - '/var/lib/app/workdirs'
+    depends_on:
+      - mongodb
+      - java
+
+  java: 
+    platform: linux/x86_64
+    build: 
+      context: ./node_modules/thi-code-runner
+      dockerfile: java.Dockerfile
+    volumes:
+      - './node_modules/thi-code-runner/libs:/var/lib/app/libs:ro'
+    ports:
+      - 3000:3000
+  # python: 
+  #   build: 
+  #     context: ./node_modules/coderunner
+  #     dockerfile: python.Dockerfile
+  #   volumes:
+  #     - './node_modules/thi-code-runner/libs:/var/lib/app/libs:ro'
+  #   ports:
+  #     - 3001:3000
+
+
+volumes:
+  data:

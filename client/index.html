@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="client.css">
+    <title>Coding ARS</title>
+</head>
+<body>
+    <div class="coding-ars-target"></div>
+    <script src="node_modules/marked/marked.min.js"></script>
+    <link rel="stylesheet" href="node_modules/xterm/css/xterm.css" />
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/vs2015.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+    <script src="dist/client.js"></script>
+    <script>
+        window.defaultKey = "2d2982";
+        window.codingArs.prepare(
+            document.getElementsByClassName('coding-ars-target')[0], 
+            'http://localhost:4000',
+            undefined, //key,
+            {
+                useFrame: true,
+                monacoBase: 'node_modules/monaco-editor/min/vs',
+                clientBase: '',
+                disableSolutions: true,
+                disableSample: true,
+                context: "dev"
+            },
+            undefined, //'example-task'
+            undefined //'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MTUxMTcyNzYsImRhdGEiOnsidXNlclJlZiI6IjEyMzQ1In0sImlhdCI6MTYxNTAzMDg3Nn0.Th9QqwfXMaDZU0a3ZMTbtuyH2PLK2IIdfOgDWkyZegQ'
+        ).then(ctr => window.currentCodingArs = ctr);
+    </script>
+</body>
+</html>

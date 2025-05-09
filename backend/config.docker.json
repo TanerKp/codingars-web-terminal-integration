@@ -1,0 +1,12 @@
+{
+    "runners": {
+        "java": "http://java:3000/run-java",
+        "python": "http://python:3001/run-python"
+    },
+    "testers": {
+        "java-junit4": "http://java:3000/run-java-junit4"
+    },
+    "callbacks": {
+        "internal": "http://host.docker.internal:4001"
+    }
+}

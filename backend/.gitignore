@@ -1,0 +1,5 @@
+workdirs
+node_modules
+workdirs-test
+.DS_Store
+.env
